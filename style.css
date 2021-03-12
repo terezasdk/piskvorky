@@ -1,0 +1,72 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  background: linear-gradient(#615dad, #ffc8da);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  margin: 0;
+}
+
+main {
+  background-color: #283e50;
+  width: 320px;
+  margin: auto;
+  margin-top: 0.4rem;
+  border-radius: 5px 5px 0 0;
+}
+
+.img-top {
+  width: 320px;
+  border-radius: 5px 5px 0 0;
+}
+
+.heading-piskvorky {
+  text-align: center;
+  color: white;
+  font-family: 'Lobster', cursive;
+  font-size: 3rem;
+  margin: 1.5rem;
+}
+
+.description {
+  text-align: center;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.btn {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  display: block;
+  padding: 1rem 0 1rem 0;
+}
+
+.btn-pravidla {
+  background-color: #1fcca4;
+  border-bottom: 0.1rem solid #283e50;
+}
+
+.btn-zacit {
+  background-color: #0197f6;
+}
+
+.btn-pravidla:hover {
+  background-color: #1cbb96;
+}
+
+.btn-zacit:hover {
+  background-color: #0090e9;
+}
