@@ -14,11 +14,17 @@ body {
   background-attachment: fixed;
 }
 
-main {
+.main-index,
+.main-pravidla {
   background-color: #283e50;
   width: 80%;
   margin: auto;
   border-radius: 5px 5px 0 0;
+}
+
+.main-hra {
+  max-width: 80vmin;
+  margin: auto;
 }
 
 .img-top {
@@ -60,11 +66,13 @@ main {
   background-color: #0197f6;
 }
 
-.btn--top:hover {
+.btn--top:hover,
+.btn--top:focus {
   background-color: #1cbb96;
 }
 
-.btn--bottom:hover {
+.btn--bottom:hover,
+.btn--bottom:focus {
   background-color: #0090e9;
 }
 
@@ -115,6 +123,92 @@ ol.rules {
   height: 0.8rem;
   width: 0.8rem;
 }
+
+.top-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.player {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
+.home {
+  background-color: #1fcca4;
+  padding: 0.5rem;
+  border-radius: 10%;
+  margin-right: 0.3rem;
+}
+
+.restart {
+  background-color: #0197f6;
+  padding: 0.5rem;
+  border-radius: 10%;
+}
+
+.home:hover,
+.home:focus {
+  background-color: #1cbb96;
+}
+
+.restart:hover,
+.restart:focus {
+  background-color: #0090e9;
+}
+
+/*
+.playground {
+  display: grid;
+  grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  height: 80vmin;
+  border: 1px solid black;
+}
+
+.playground__box {
+  border: 1px solid black;
+  opacity: 0.4;
+  cursor: pointer;
+}
+*/
+
+.playground {
+  display: flex;
+  flex-wrap: wrap;
+  height: 80vmin;
+  border: 1px solid black;
+}
+
+.playground__box {
+  flex-basis: 10%;
+  padding: 0;
+  background: hsla(0, 0%, 100%, 0.315);
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.playground__box:hover,
+.playground__box:focus {
+  background: hsla(0, 0%, 100%, 0.616);
+}
+
+.playground__box:focus {
+  outline: none;
+}
+
+/*
+.playground__box {
+  flex-basis: 10%;
+  padding: 0;
+  background: hsla(0, 0%, 100%, 0.103);
+  cursor: pointer;
+  border: none;
+}
+*/
 
 @media (min-width: 700px) {
   .explanation-pictures {
