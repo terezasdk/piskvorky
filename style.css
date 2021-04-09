@@ -12,14 +12,22 @@ body {
   background: linear-gradient(#615dad, #ffc8da);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  text-rendering: optimizeLegibility;
 }
 
 .main-index,
 .main-pravidla {
   background-color: #283e50;
-  width: 80%;
   margin: auto;
   border-radius: 5px 5px 0 0;
+}
+
+.main-index {
+  width: 320px;
+}
+
+.main-pravidla {
+  width: 80%;
 }
 
 .main-hra {
@@ -75,8 +83,6 @@ body {
 .btn--bottom:focus {
   background-color: #0090e9;
 }
-
-/*.............................................*/
 
 .heading-pravidla {
   text-align: center;
@@ -134,6 +140,7 @@ ol.rules {
 .player {
   color: white;
   font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
   text-transform: uppercase;
 }
 
@@ -160,35 +167,19 @@ ol.rules {
   background-color: #0090e9;
 }
 
-/*
-.playground {
-  display: grid;
-  grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-  grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-  height: 80vmin;
-  border: 1px solid black;
-}
-
-.playground__box {
-  border: 1px solid black;
-  opacity: 0.4;
-  cursor: pointer;
-}
-*/
-
 .playground {
   display: flex;
   flex-wrap: wrap;
   height: 80vmin;
-  border: 1px solid black;
 }
 
 .playground__box {
   flex-basis: 10%;
+  margin: 0;
   padding: 0;
   background: hsla(0, 0%, 100%, 0.315);
   cursor: pointer;
-  border: 1px solid black;
+  border: 1px solid rgb(65, 65, 65);
 }
 
 .playground__box:hover,
@@ -199,16 +190,6 @@ ol.rules {
 .playground__box:focus {
   outline: none;
 }
-
-/*
-.playground__box {
-  flex-basis: 10%;
-  padding: 0;
-  background: hsla(0, 0%, 100%, 0.103);
-  cursor: pointer;
-  border: none;
-}
-*/
 
 @media (min-width: 700px) {
   .explanation-pictures {
