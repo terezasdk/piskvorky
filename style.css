@@ -187,11 +187,27 @@ ol.rules {
 
 .playground__box:hover,
 .playground__box:focus {
-  background: hsla(0, 0%, 100%, 0.616);
+  background-color: hsla(0, 0%, 100%, 0.616);
 }
 
 .playground__box:focus {
   outline: none;
+}
+
+.playground__box--circle {
+  background-image: url(images/circle.svg);
+  color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75%;
+}
+
+.playground__box--cross {
+  background-image: url(images/cross.svg);
+  color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75%;
 }
 
 @media (min-width: 700px) {
