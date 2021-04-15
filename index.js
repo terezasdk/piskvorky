@@ -21,14 +21,3 @@ btnElm.forEach((button) => {
     }
   });
 });
-
-//for (let index = 0; index < buttons.length; index++) {
-//const button = buttons[index];
-//}
-
-//const clickOnBtn = () => {
-//  const btnElm = document.querySelectorAll('.playground__box');
-//  btnElm.classList.add('playground__box--circle');
-//};
-
-//btnElm.addEventListerner('click', clickOnBtn);

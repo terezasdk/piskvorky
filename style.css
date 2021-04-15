@@ -200,6 +200,8 @@ ol.rules {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 75%;
+  animation-name: enlargement;
+  animation-duration: 0.15s;
 }
 
 .playground__box--cross {
@@ -208,6 +210,17 @@ ol.rules {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 75%;
+  animation-name: enlargement;
+  animation-duration: 0.15s;
+}
+
+@keyframes enlargement {
+  0% {
+    background-size: 0%;
+  }
+  100% {
+    background-size: 75%;
+  }
 }
 
 @media (min-width: 700px) {
